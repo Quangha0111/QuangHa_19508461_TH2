@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width='device-width', initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        *{
+            padding: 0px;
+            margin: auto;
+        }
+        .wrapper{
+            width: 1089px;
+            height: 800px;
+            border: 1px solid black;
+        }
+        .contens{
+            width: 1089px;
+            height: 500px;
+            background-color: #4c4883;
+        }
+        header{
+            width: 1089px;
+            height: 100px;
+            background-color: rgb(141, 178, 228) ;
+        }
+        nav{
+            width: 1089px;
+            height: 50px;
+            background-color: #c9e4a7;
+        }
+        aside{
+            width: 35%;
+           height: 100%;
+            background-color: #e6ac69;
+            float: left;
+
+        }
+        section{
+            width: 65%;
+            background-color: #e07b07;
+            float: left;
+        }
+        
+        footer{
+            width: 1089px;
+            height: 150px;
+            background-color: #b16f18;
+        }
+        .menu li{
+            list-style: none;
+            float: left;
+            width: 150px;
+            padding: 15px 50px;
+            position: relative;
+
+        
+        }
+        li a{
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        li:hover{
+            background-color: yellowgreen;
+        }
+        li:hover>a{
+            font-style: italic;
+            color: red;
+        }
+        li .sub-menu{
+            display: none;
+            background-color: #c9e4a7;
+        }
+
+        li:hover>.sub-menu{
+            display: block;
+            position: absolute;
+        }
+        li .sub-menu li:hover> .sub-menu{
+            top: 0px;
+            left: 150px;
+        }
+        footer {
+            text-align: center;
+            font-weight: bolder;
+            color: rgb(243, 205, 205) ;
+           
+        }
+        h3{
+            padding-top: 50px;
+        }
+
+
+    </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header> header
+
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Dich vu</a> 
+                        <ul class="sub-menu">
+                            <li><a href="#">Sua chua</a> 
+                                <ul class="sub-menu">
+                                    <li><a href="#">Son</a> </li>
+                                    <li><a href="#">Thay Dau</a> </li>
+                                    <li><a href="#">Kiem tra</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Bao Hanh</a> </li>
+                            <li><a href="#">Thay Moi</a> </li>
+                            <li><a href="#">Bao Gia</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tu van </a> </li>
+                    <li><a href="#">Lien he</a> </li>
+                </ul>
+            </nav>
+            <div class="contens">
+                <aside>
+                    <img src="" alt="">
+                </aside>
+                <section>
+
+                </section>
+            </div>
+            <footer>
+            <h3>NGUYEN QUANG HA _ 19508461</h3>
+            </footer>
+        </div>
+    </body>
+</html>
